@@ -1,22 +1,20 @@
 #include <stdio.h>
 
-int sum (int, int);
+int add(int, int);
 
 int main(){
 
-  int num = 0;
-  printf("Enter the number : ");
-  scanf("%d", &num);
-  printf("%d\n", sum(num, 0));
-
-  return 0;
+  printf("%d\n", add(4552345, 0));
 }
 
-int sum(int n, int acc){
+int add(int n, int acc){
+  
+  if(n != 0){
+    acc += n % 10;
+    return add(n / 10, acc);
+  }
 
-  if(n / 10 == 0 && acc / 10 == 0) return acc + n;
-  if(n / 10 == 0 && acc / 10 != 0) return sum(acc + n, 0);
+  if(n == 0 && acc / 10 != 0) return add(acc / 10, acc % 10);
 
-  int su = acc + (n % 10);
-  return sum(n / 10, acc + (n % 10));
+  return acc;
 }
