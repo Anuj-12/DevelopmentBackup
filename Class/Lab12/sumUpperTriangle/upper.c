@@ -1,3 +1,5 @@
+//Sum of upper triangular matrix
+
 #include <stdio.h>
 
 int main(){

@@ -1,3 +1,5 @@
+//Equal Matrices
+
 #include <stdio.h>
 
 int main(){
