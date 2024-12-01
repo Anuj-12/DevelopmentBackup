@@ -1,3 +1,5 @@
+//HCF by recursion
+
 #include <stdio.h>
 
 int hcf(int, int);

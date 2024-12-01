@@ -1,3 +1,4 @@
+/*Second Sum of Digits*/
 #include <stdio.h>
 
 int sum(int, int);
