@@ -1,0 +1,29 @@
+-- CommandLineRunner is an interface (implemented as a hook) from spring boot framework that allows us to run code after the application has just started  
+  -- Primarily used for running the code at startup  
+  -- It has a single run() method  
+  --It is commonly used for:  
+      -Initializing database data.  
+      -Running startup tasks.  
+      -Logging application startup information.  
+
+-- To turn off the spring boot banner --> spring.main.banner-mode=off  
+-- Reducing logging levels to only show logging --> logging.level.root=warn  
+
+-- Entity Class --> Java class that is mapped to a database table  
+  -- @Entity annotation  
+  -- Must have atleast one public or protected no argument constructor  
+    -- If you make a argument constructor java doesn't make a no argument constructor  
+  -- @Table(name="student") --> To map a class to a database table  
+  -- @Id --> Marks the primary key  
+    -- Primary Key --> Identifies each row in a table uniquely (can't be a null value)  
+      -- in MySql it can be set to AUTO_INCREMENT  
+      -- in JPA @GeneratedValue(strategy=GenerationType.IDENTITY)  
+        -- more generation types exist  
+  -- @Column("columnName") --> Used to map a column to a field  
+    -- It is optional  
+    -- Without it the column name is the field name  
+
+-- Data Access Object (DAO) is a way of organizing code to handle the communication between your program and a database  
+  -- @Repository marks a class as a DAO  
+-- Create Read Update Delete (CRUD)  
+

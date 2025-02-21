@@ -1,0 +1,1 @@
+{"resources":{"Scripts/AccountCheck.sql":{"default-datasource":"mysql8-1951a390eb5-460088b7e0cd6ae1","default-catalog":"money_tracker"},"Scripts/Reset Table.sql":{"default-datasource":"mysql8-1951a390eb5-460088b7e0cd6ae1","default-catalog":"money_tracker"},"Scripts/Script-1.sql":{"default-datasource":"mysql8-1951a390eb5-460088b7e0cd6ae1","default-catalog":"mysql"}}}
